@@ -3,4 +3,174 @@ body {
 	   and use the OS’s UI font as the website font
 	 */
   font: 100%/1.5 system-ui;
+  max-width: 100ch;
+  margin-inline: auto;
+  padding: 6ch;
+}
+
+nav {
+  display: flex;
+  margin-bottom: 25px;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: oklch(80% 3% 200);
+}
+
+a {
+  flex: 1;
+  text-decoration: none;
+  color: inherit;
+  text-align: center;
+  padding: 0.5em;
+}
+
+a:hover {
+  border-bottom-width: 0.4em;
+  border-bottom-style: solid;
+  border-bottom-color: var(--color-accent);
+  background-color: oklch(from var(--color-accent) 95% 5% h);
+  padding-bottom: 0.1em;
+}
+
+.current {
+  border-bottom-width: 0.4em;
+  border-bottom-style: solid;
+  border-bottom-color: oklch(80% 3% 200);
+  padding-bottom: 0.1em;
+  font-weight: bold;
+}
+
+:root {
+  --color-accent: oklch(65% 50% 0);
+}
+
+html {
+  accent-color: var(--color-accent);
+}
+
+input, textarea, button {
+  font: inherit;
+}
+
+form {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1em;
+}
+
+label {
+  display: grid;
+  grid-template-columns: subgrid;
+  grid-column: 1 / -1;
+  gap: 1em;
+}
+
+button {
+  display: grid;
+  grid-column: 1 / -1;
+  gap: 1em;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
+  gap: 1em;
+}
+
+article {
+  display: grid;
+  grid-template-rows: subgrid;
+  grid-row: span 3;
+  gap: 1em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.1;
+  text-wrap: balance;
+}
+
+h2 {
+  margin: 0;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+header h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+  color: #003b71;
+}
+
+header p {
+  margin-bottom: 0.3rem;
+  color: #555;
+}
+
+header a {
+  color: #003b71;
+  margin: 0 0.3rem;
+}
+
+header a:hover {
+  font-weight: bold;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+section h2 {
+  font-size: 1.5rem;
+  color: darkblue;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 0.2rem;
+  margin-bottom: 0.5rem;
+}
+
+article {
+  margin-bottom: 1.5rem;
+}
+
+article p {
+  margin-bottom: 0.15rem;
+  line-height: 1.4;
+  color: #333;
+}
+
+article time {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 0.15rem;
+}
+
+article a {
+  color: #004b8d;
+  font-weight: 500;
+}
+
+article a:hover {
+  text-decoration: underline;
+}
+
+article p,
+article time {
+  margin: 0;
+  padding: 0;
+  line-height: 1.3;
+}
+
+article h3 {
+  font-size: 1.1rem;
+  color: darkslategray;
+  margin-bottom: 0.2rem;
+}
+
+article h4 {
+  color: black;
+  margin-top: 0px;
+  margin-bottom: 0.2rem;
 }
