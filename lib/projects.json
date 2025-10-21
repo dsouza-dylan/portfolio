@@ -2,19 +2,19 @@
   {
     "title": "Predicting El Niño with Machine Learning",
     "year": "2025",
-    "image": "../images/elninoarticle.png",
+    "image": "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*XeGrMTkgVxwi8M34Nug6ag.png",
     "description": "Leveraging decades of climate data to create ENSOcast, an accessible tool for understanding El Niño–Southern Oscillation."
   },
   {
     "title": "Harnessing Data Science for Wildfire Management",
     "year": "2025",
-    "image": "../images/wildfires.png",
+    "image": "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*BST87hoqa592PQ9KZ0NlQg.png",
     "description": "Understanding how artificial intelligence can be leveraged to detect and predict wildfire spread within the United States."
   },
   {
     "title": "Rebuilding Coral Reefs with Data",
     "year": "2024",
-    "image": "../images/coral_reefs.webp",
+    "image": "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*wbDZ4Evt4XL7CQ62bVe08w.jpeg",
     "description": "Transforming coral reef restoration through predictive modeling and photomosaic technology."
   },
   {
