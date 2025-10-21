@@ -2,55 +2,55 @@
   {
     "title": "Predicting El Niño with Machine Learning",
     "year": "2025",
-    "image": "../images/elninoarticle.png",
+    "image": "images/elninoarticle.png",
     "description": "Leveraging decades of climate data to create ENSOcast, an accessible tool for understanding El Niño–Southern Oscillation."
   },
   {
     "title": "Harnessing Data Science for Wildfire Management",
     "year": "2025",
-    "image": "../images/wildfires.png",
+    "image": "images/wildfires.png",
     "description": "Understanding how artificial intelligence can be leveraged to detect and predict wildfire spread within the United States."
   },
   {
     "title": "Rebuilding Coral Reefs with Data",
     "year": "2024",
-    "image": "../images/coral_reefs.webp",
+    "image": "images/coral_reefs.webp",
     "description": "Transforming coral reef restoration through predictive modeling and photomosaic technology."
   },
   {
     "title": "Exploring the Morality of Animal Testing",
     "year": "2024",
-    "image": "../images/animal_testing.jpg",
+    "image": "images/animal_testing.jpg",
     "description": "An examination of the ethical considerations surrounding animal testing in scientific research."
   },
   {
     "title": "Solving Ethical Dilemmas",
     "year": "2023",
-    "image": "../images/ethics.jpg",
+    "image": "images/ethics.jpg",
     "description": "An exploration of whether ethical dilemmas can be resolved in a socially acceptable manner."
   },
   {
     "title": "Evaluating Lyrics using NLP",
     "year": "2022",
-    "image": "../images/nlp_lyrics.png",
+    "image": "images/nlp_lyrics.png",
     "description": "Developing a model that analyzes song lyrics and themes using natural language processing."
   },
   {
     "title": "Using AI and CGI in Music",
     "year": "2022",
-    "image": "../images/ai_music.jpg",
+    "image": "images/ai_music.jpg",
     "description": "Discussing how artificial intelligence is revolutionizing the way we perceive music."
   },
   {
     "title": "Understanding Bias in AI",
     "year": "2022",
-    "image": "../images/bias_ai.jpg",
+    "image": "images/bias_ai.jpg",
     "description": "Acknowledging biases in artificial intelligence algorithms and practices."
   },
   {
     "title": "AI Roadmap for High School Students",
     "year": "2020",
-    "image": "../images/ai_roadmap.jpg",
+    "image": "images/ai_roadmap.jpg",
     "description": "Framing a college roadmap for high school students interested in artificial intelligence."
   },
   {
