@@ -2,6 +2,7 @@ import { fetchJSON, renderProjects, fetchGitHubData } from './global.js';
 const projects = await fetchJSON('./lib/projects.json');
 const latestProjects = projects.slice(0, 3);
 const projectsContainer = document.querySelector('.projects');
+const projectsTitle = document.querySelector('.projects-title');
 renderProjects(latestProjects, projectsContainer, 'h2');
 
 const githubData = await fetchGitHubData('dsouza-dylan');
