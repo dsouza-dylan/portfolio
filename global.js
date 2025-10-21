@@ -21,7 +21,7 @@ let pages = [
   // add the rest of your pages here
 ];
 
-const BASE_PATH = (location.hostname === "localhost" || location.hostname === "127.0.0.1")
+export const BASE_PATH = (location.hostname === "localhost" || location.hostname === "127.0.0.1")
   ? "/"                  // Local server
   : "/portfolio/";         // GitHub Pages repo name
 
