@@ -199,7 +199,7 @@ article h4 {
 
 #profile-stats dl {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 20px;
 }
 
@@ -303,31 +303,6 @@ article h4 {
   }
 }
 
-.stats {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 0.5rem 1rem;
-  text-align: center;
-  margin: 2rem auto;
-  max-width: 800px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  color: #24292e;
-}
-
-.stats dt {
-  grid-row: 1;
-  font-weight: 600;
-}
-
-.stats dd {
-  grid-row: 2;
-  margin: 0;
-  font-size: 1rem;
-  font-weight: 500;
-  color: #000;
-}
-
 .gridlines line {
   stroke: #e0e0e0;
   stroke-opacity: 0.6;
@@ -339,9 +314,12 @@ article h4 {
 }
 
 circle {
-  transition: 200ms;
+  transition: all 200ms, r calc(var(--r) * 100ms);
   transform-origin: center;
   transform-box: fill-box;
+  @starting-style {
+    r: 0;
+  }
 }
 
 circle:hover {
@@ -395,4 +373,130 @@ dl.info[hidden]:not(:hover, :focus-within) {
 
 circle.selected {
   fill: #ff6b6b;
+}
+
+#files {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+
+  > div {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: subgrid;
+  }
+
+  dt {
+    grid-column: 1;
+  }
+
+  dd {
+    grid-column: 2;
+  }
+}
+
+dt > code small {
+  display: block;
+  font-size: 0.8em;
+  opacity: 0.7;
+  font-weight: normal;
+}
+
+.loc {
+  display: flex;
+  width: 0.5em;
+  aspect-ratio: 1;
+  background: var(--color, steelblue);
+  border-radius: 50%;
+}
+
+dd {
+  grid-column: 2;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  align-content: start;
+  gap: 0.15em;
+  padding-top: 0.6em;
+  margin-left: 0;
+}
+
+#files > div {
+  display: contents;
+}
+
+#files dt {
+  grid-column: 1;
+  font-weight: 600;
+  padding-top: 0.6em;
+}
+
+#files dd {
+  grid-column: 2;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  align-content: start;
+  gap: 0.15em;
+  padding-top: 0.6em;
+  margin: 0;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem 2rem;
+  text-align: center;
+  margin: 2rem auto;
+  max-width: 1000px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #24292e;
+}
+
+.stats > div {
+  display: grid;
+  grid-template-rows: auto auto;
+  gap: 0.5rem;
+}
+
+.stats dt {
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: #586069;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.stats dd {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #24292e;
+  margin: 0;
+}
+
+.stats abbr {
+  text-decoration: none;
+  border-bottom: 1px dotted #586069;
+}
+
+#scrolly-1 {
+  position: relative;
+  display: flex;
+  gap: 1rem;
+
+  > * {
+    flex: 1;
+  }
+}
+
+#scatter-story {
+  position: relative;
+}
+
+#scatter-plot {
+  position: sticky;
+  top: 0;
+  left: 0;
+  bottom: auto;
+  height: 50vh;
 }
